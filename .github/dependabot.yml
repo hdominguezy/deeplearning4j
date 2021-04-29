@@ -1,0 +1,103 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.fasterxml.jackson.module:jackson-module-paranamer
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.datatype:jackson-datatype-jdk8
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.module:jackson-module-scala_2.11
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.core:jackson-annotations
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.datatype:jackson-datatype-joda
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.dataformat:jackson-dataformat-xml
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.core:jackson-databind
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.core:jackson-core
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: org.apache.solr:solr-ltr
+    versions:
+    - 8.7.0
+    - 8.8.0
+    - 8.8.1
+  - dependency-name: org.apache.solr:solr-core
+    versions:
+    - 8.7.0
+    - 8.8.0
+    - 8.8.1
+  - dependency-name: org.apache.solr:solr-test-framework
+    versions:
+    - 8.7.0
+    - 8.8.0
+    - 8.8.1
+  - dependency-name: org.apache.solr:solr-solrj
+    versions:
+    - 8.7.0
+    - 8.8.0
+    - 8.8.1
+  - dependency-name: org.apache.camel:camel-package-maven-plugin
+    versions:
+    - 3.7.1
+    - 3.7.2
+    - 3.8.0
+  - dependency-name: org.apache.camel:camel-test
+    versions:
+    - 3.7.1
+    - 3.7.2
+    - 3.8.0
+  - dependency-name: org.apache.camel:camel-core
+    versions:
+    - 3.7.1
+    - 3.7.2
+    - 3.8.0
+  - dependency-name: org.apache.camel:camel-csv
+    versions:
+    - 3.7.1
+    - 3.7.2
+    - 3.8.0
+  - dependency-name: org.apache.camel:camel-kafka
+    versions:
+    - 3.7.1
+    - 3.7.2
+    - 3.8.0
+  - dependency-name: org.springframework:spring-beans
+    versions:
+    - 5.1.8.RELEASE
+  - dependency-name: org.springframework:spring-context
+    versions:
+    - 5.1.8.RELEASE
+  - dependency-name: org.springframework:spring-core
+    versions:
+    - 5.1.8.RELEASE
